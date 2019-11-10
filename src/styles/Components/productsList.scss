@@ -1,0 +1,36 @@
+.productsList{
+    display: grid;
+    grid-gap: 20px;
+    
+    @media screen {
+        @media (min-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        
+        }
+    }
+    .productCard{ 
+        padding: 20px;
+
+        .productImage{
+            margin-bottom: 10px;
+            max-width: 100%;
+        }
+        .productName{
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+            color: #354b84;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        .productCode{
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            font-weight: 500;
+            color: red;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}

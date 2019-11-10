@@ -1,25 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Switch, Route } from 'react-router-dom';
+import Contact from './Pages/Contact';
+import Home from './Pages/Home';
+import Product from './Pages/Product';
+import Representative from './Pages/Representative';
+import QualityPage from './Pages/QualityPage';
+import FooterPage from '../src/Components/FooterPage';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <header>HEADER</header>
+
+        <Switch>
+         <Route path="/contato" component={Contact} />
+         <Route path="/home" component={Home} />
+         <Route path="/produtos" component={Product} />
+         <Route path="/representantes" component={Representative} />
+         <Route path="/qualidade" component={QualityPage} />
+        </Switch>
+        <footer>
+        <FooterPage />
+        </footer>
+      
+    </>
   );
 }
 

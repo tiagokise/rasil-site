@@ -1,0 +1,74 @@
+.h1Repres{
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2c2e30;
+  padding: 20px ;
+
+}
+.h2Repres{
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2.83;
+  letter-spacing: normal;
+  text-align: center;
+  color: #7e8085;
+  padding: 0 20px 20px 20px ;
+
+}
+
+.LineDivRep {
+  width: 88.4px;
+  height: 5px;
+  background-color: #071fc8;
+}
+
+.representativesInfo{
+  width: 100%;
+
+}
+.representativeMapSp {
+  height: 271px;
+  overflow: hidden;
+  display: float;
+  margin: 0;
+
+}
+.representativeMapSp img{
+    margin: o 20px 0 20px;
+    width: 95%;
+
+}
+
+.representativeCity {
+  width: 217px;
+  margin: 0 auto;
+}
+
+.h2Map {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: #363d4f;
+  border-bottom: 4px solid #071fc8;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.pMap {
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  color: #6d7783;
+  line-height: 24px;
+
+}

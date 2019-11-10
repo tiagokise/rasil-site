@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600,700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+.container {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.jumbotron {
+  height: 450px;
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 4px 2px 3px #000000;
+    text-align: center;
+  }
+}
+
+
+.qualitypicimg {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qualityNumberDiv{
+  width: 50px;
+  height: 50px;
+  background-color: #354b84;
+  position: relative; top: -31px; left: 8px;
+  text-align: center;
+}
+
+.qualityNumber{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+
+.qualitypageitem{
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.qualitypageDiv{
+  width: 22px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #354b84;
+  margin:  10px 20px 30px 20px;
+}
+
+.qualityH2 {
+  display: inline-block;
+  margin-top: -50px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  font-weight: 600;
+  color: #354b84;
+}
+
+.qualityp {
+  display: inline-block;
+  margin-top: 10px;
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.textoIsodiv {
+  width: 139px;
+  height: 110px;
+  text-align: center;
+  display: inline-block;
+  position: relative; top: -20px; left: 10px;
+
+  .textoseloiso {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    color: #6d7783;
+  }
+}
+
+.Iso9001 {
+  width: 127px;
+  height: 109px;
+}
+
+
+.qualityRelease {
+  padding: 30px 20px;
+  width: 100%;
+  text-align: center;
+
+  .titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #54565a;
+  }
+
+  .texto {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 2.15;
+    color: #54565a;
+    margin-top: 60px;
+  }
+}
+
+.qualityInfo {
+  padding: 10px 20px 0 20px;
+  width: 100%;
+  
+  .qualityCard {
+    margin-bottom: 40px;
+    
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: #363d4f;
+      border-bottom: 4px solid #071fc8;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      color: #6d7783;
+    }
+  }
+
+}
+
+
+
+.contactInfo {
+  padding: 50px 20px;
+  width: 100%;
+  
+  .contactCard {
+    margin-bottom: 40px;
+  
+    h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-transform: uppercase;
+      color: #363d4f;
+      border-bottom: 4px solid #071fc8;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+  
+    p {
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      color: #6d7783;
+    }
+    
+  }
+      @media screen{
+        @media (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 50px;
+          }
+        
+        @media (min-width: 1024px) {
+            display: block;
+            max-width: 320px;
+            float: right;
+          }
+      }
+}
+
+
+button {
+    padding: 12px 50px;
+    background-color: #354b84;
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+@import '/styles/Components/ContactForm.scss';
+@import '/styles/Components/BusiInfo.scss';
+@import '/styles/Components/YearsInfo.scss';
+@import '/styles/Components/HeaderLogo.scss';
+@import '/styles/Components/TwoPics.scss';
+@import '/styles/Components/JumbotronHome.scss';
+@import '/styles/Components/Representative.scss';
+@import '/styles/Components/QualityPage.scss';
+@import '/styles/Components/FooterPage.scss';
+@import '/styles/Components/productsList.scss';
+@import '/styles/Components/productsHeader.scss';
+
+
+
+

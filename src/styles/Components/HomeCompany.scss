@@ -1,0 +1,53 @@
+.homeCompany{
+    margin-bottom: 70px;
+
+
+    .companyImagebox{
+        max-width: calc(50% - 10px);
+        display: inline-block;
+        height: 260px;
+        overflow: hidden;
+
+        img{
+            height: 100%;
+            max-width:  unset;
+            width: auto;
+        }
+
+        &.companyImagebox1{
+            margin-right: 20px;
+
+        }
+    }
+    @media screen {
+        @media (min-width: 1024px){
+            position: relative;
+
+            .companyInfo{
+                padding-left: 450px;
+                margin-bottom: 50px;
+
+                .homeTitle, .homeText{
+                    text-align: start;
+                }
+            }
+            .companyImagebox1{
+                position: absolute;
+                height: 100%;
+                width: 400px;
+                top: 0;
+            }
+
+            .companyImagebox2 {
+                max-width: 100%;
+                width: 100%;
+
+                .companyImage2{
+                    height: auto;
+                    margin-left: 450px;
+                }
+            }
+
+        }
+    }
+}

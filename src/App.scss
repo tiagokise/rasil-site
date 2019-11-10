@@ -14,6 +14,10 @@
 li {
   list-style-type: none;
 }
+
+img {
+  max-width: 100%;
+}
 .container {
   max-width: 1024px;
   margin: auto;
@@ -246,7 +250,7 @@ button {
 @import '/styles/Components/FooterPage.scss';
 @import '/styles/Components/productsList.scss';
 @import '/styles/Components/productsHeader.scss';
-
-
-
-
+@import '/styles/Components/Home.scss';
+@import '/styles/Components/HomeHistory.scss';
+@import '/styles/Components/HomeCompany.scss';
+@import '/styles/Components/HomeQuality.scss';

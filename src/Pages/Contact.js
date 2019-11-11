@@ -5,7 +5,7 @@ import ContactForm from '../Components/ContactForm';
 import GoogleMapReact from 'google-map-react';
 import jumbotronContact from '../img/jumbotronContact.jpeg';
 
-function Contact() {
+export default function Contact() {
     return (
         <>
             <Jumbotron 
@@ -24,4 +24,3 @@ function Contact() {
         </>
     );
 }
-export default Contact;

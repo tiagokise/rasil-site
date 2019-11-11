@@ -44,67 +44,6 @@ img {
 }
 
 
-.qualitypicimg {
-  height: 250px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.qualityNumberDiv{
-  width: 50px;
-  height: 50px;
-  background-color: #354b84;
-  position: relative; top: -31px; left: 8px;
-  text-align: center;
-}
-
-.qualityNumber{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
-  color: #ffffff;
-}
-
-.qualitypageitem{
-  padding: 10px 20px;
-  width: 100%;
-}
-
-.qualitypageDiv{
-  width: 22px;
-  height: 5px;
-  border-radius: 2.5px;
-  background-color: #354b84;
-  margin:  10px 20px 30px 20px;
-}
-
-.qualityH2 {
-  display: inline-block;
-  margin-top: -50px;
-  font-family: 'Poppins', sans-serif;
-  font-size: 44px;
-  font-weight: 600;
-  color: #354b84;
-}
-
-.qualityp {
-  display: inline-block;
-  margin-top: 10px;
-  font-family: 'Poppins', sans-serif;
-  text-align: left;
-  font-size: 13px;
-  font-weight: 500;
-  color: #000000;
-}
 
 .textoIsodiv {
   width: 139px;
@@ -126,59 +65,6 @@ img {
   width: 127px;
   height: 109px;
 }
-
-
-.qualityRelease {
-  padding: 30px 20px;
-  width: 100%;
-  text-align: center;
-
-  .titulo {
-    font-family: 'Poppins', sans-serif;
-    font-size: 42px;
-    font-weight: 600;
-    line-height: 1.1;
-    color: #54565a;
-  }
-
-  .texto {
-    font-family: 'Poppins', sans-serif;
-    font-size: 16px;
-    line-height: 2.15;
-    color: #54565a;
-    margin-top: 60px;
-  }
-}
-
-.qualityInfo {
-  padding: 10px 20px 0 20px;
-  width: 100%;
-  
-  .qualityCard {
-    margin-bottom: 40px;
-    
-    h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 1.5;
-      text-transform: uppercase;
-      color: #363d4f;
-      border-bottom: 4px solid #071fc8;
-      padding-bottom: 15px;
-      margin-bottom: 15px;
-    }
-  
-    p {
-      font-family: 'Poppins', sans-serif;
-      font-size: 16px;
-      color: #6d7783;
-    }
-  }
-
-}
-
-
 
 .contactInfo {
   padding: 50px 20px;
@@ -204,21 +90,21 @@ img {
       font-size: 15px;
       color: #6d7783;
     }
-    
   }
-      @media screen{
-        @media (min-width: 768px) {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 50px;
-          }
+
+  @media screen{
+    @media (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 50px;
+    }
         
-        @media (min-width: 1024px) {
-            display: block;
-            max-width: 320px;
-            float: right;
-          }
-      }
+    @media (min-width: 1024px) {
+      display: block;
+      max-width: 320px;
+      float: right;
+    }
+  }
 }
 
 
@@ -234,23 +120,17 @@ button {
 }
 
 
-
-
-
-
-
 @import '/styles/Components/ContactForm.scss';
-@import '/styles/Components/BusiInfo.scss';
-@import '/styles/Components/YearsInfo.scss';
-@import '/styles/Components/HeaderLogo.scss';
-@import '/styles/Components/TwoPics.scss';
 @import '/styles/Components/JumbotronHome.scss';
-@import '/styles/Components/Representative.scss';
+@import '/styles/Components/Representatives.scss';
 @import '/styles/Components/QualityPage.scss';
 @import '/styles/Components/FooterPage.scss';
-@import '/styles/Components/productsList.scss';
-@import '/styles/Components/productsHeader.scss';
+@import '/styles/Components/ProductsList.scss';
+@import '/styles/Components/ProductsHeader.scss';
 @import '/styles/Components/Home.scss';
 @import '/styles/Components/HomeHistory.scss';
 @import '/styles/Components/HomeCompany.scss';
 @import '/styles/Components/HomeQuality.scss';
+@import '/styles/Components/RepresentativesMapSp.scss';
+@import '/styles/Components/RepresentativesAddress.scss';
+@import '/styles/Components/RepresentativesInfo.scss';

@@ -1,0 +1,30 @@
+.representativesAddress{
+    padding: 20px 40px 0 40px;
+
+        .addressTitle{
+            font-family: 'Oswald', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            color: #354b84;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            position: relative;
+                
+            &::after{
+                content: "";
+                display: block;
+                width: 60px;
+                height: 3px;
+                background-color: #071fc8;
+                position: absolute;
+                bottom: -13px;
+                left: 0;
+            }
+        }
+        .addressText{
+            font-family: "Poppins", sans-serif;
+            font-size: 12px;
+            line-height: 1.7;
+            color: #6d7783;
+        }
+}

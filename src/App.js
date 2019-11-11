@@ -4,8 +4,8 @@ import { Switch, Route } from 'react-router-dom';
 import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Product from './Pages/Product';
-import Representative from './Pages/Representative';
-import QualityPage from './Pages/QualityPage';
+import Representatives from './Pages/Representatives';
+import Quality from './Pages/Quality';
 import FooterPage from '../src/Components/FooterPage';
 
 
@@ -20,8 +20,8 @@ function App() {
          <Route path="/contato" component={Contact} />
          <Route path="/home" component={Home} />
          <Route path="/produtos" component={Product} />
-         <Route path="/representantes" component={Representative} />
-         <Route path="/qualidade" component={QualityPage} />
+         <Route path="/representantes" component={Representatives} />
+         <Route path="/qualidade" component={Quality} />
         </Switch>
         <footer>
         <FooterPage />

@@ -1,11 +1,11 @@
 import React from 'react'
-import ProductCard from './ProductCard';
+import ProductLineCard from './ProductLineCard';
 
 export default function ProductList({products}) {
 
     return (
     <ul className="productsList">
-        {products.map(product => <ProductCard {...product}/>)}
+        {products.map(product => <ProductLineCard {...product}/>)}
     </ul>
     );
 }

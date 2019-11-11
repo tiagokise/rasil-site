@@ -1,28 +1,21 @@
 import React from 'react'
 import Jumbotron from '../Components/Jumbotron';
 import jumbotronQuality from '../img/jumbotronQuality.jpg';
-import QualityPageItemSet from '../Components/QualityPageItemSet';
+import QualityCardList from '../Components/QualityCardList';
 
 
+export default function Quality() {
 
-
-function QualityPage() {
-return (
-            <>
+    return (
+        <>
             <Jumbotron 
                 label="Nosso processo produtivo conta com a  própria fábrica de compostos"
                 imgURL={jumbotronQuality} />
-               
-
             <div className="container">
-            <QualityPageItemSet />
-
-        
+                <QualityCardList />  
             </div>
-                
-            </>               
+            
+        </>               
 
-        );
+    );
 }
-    
-export default QualityPage;

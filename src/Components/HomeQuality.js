@@ -1,6 +1,6 @@
 import React from 'react';
 import IsoPic from '../img/iso9001.jpg';
-import QualityCard from './QualityCard';
+import HomeQualityCard from './HomeQualityCard';
 
 export default function HomeQuality() {
 
@@ -43,8 +43,8 @@ export default function HomeQuality() {
     <div className="homeQuality">
       <h3 className="homeTitle">Qualidade</h3>
       <p className="homeText">Comprometidos com o atendimento das exigências de nossos clientes, melhoria continua de nossos processos e produtos, aperfeiçoamento do nosso quadro de colaboradores, a RASIL BORRACHAS vem aprimorando seu Sistema de Gestão da Qualidade de acordo com a norma ISO 9001, com certificação obtida em março/2009.</p>
-      <div className="qualityInfos">
-        {  qualitycards.map(qualitycard => <QualityCard  { ...qualitycard} />) }
+      <div className="homeQualityInfos">
+        {  qualitycards.map(qualitycard => <HomeQualityCard  { ...qualitycard} />) }
       </div>
     </div>
   );

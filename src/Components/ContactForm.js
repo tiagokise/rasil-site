@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactForm() {
+export default function ContactForm() {
   return (
     <form className="contactForm">
       <input id="name" name="name" placeholder="Nome" />
@@ -10,5 +10,3 @@ function ContactForm() {
     </form>
   );
 }
-
-export default ContactForm;

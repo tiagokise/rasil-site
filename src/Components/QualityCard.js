@@ -1,16 +1,25 @@
 import React from 'react';
 
-export default function QualityCard({ title, texts, certifieds }) {
+export default function QualityCard({ imgURL, title, items, numbers }) {
   return (
-    <div className="qualityCard">
-      <h4 className="qualityTitle">{title}</h4>
-      {texts.map(text => <p className="qualityText" >{text}</p> )}
-      {certifieds && certifieds.map(certified => 
-        <div className="certifiedBox">
-          <img className="certifiedImage" src={certified.imgURL} alt={certified.title}/>
-          <p className="certifiedLabel">{certified.label}</p>
-        </div>
-      )}
+    <>
+    <div className="qualityCardImage">
+      <div className="qualityImage"
+          style={{ backgroundImage: `url(${imgURL})` }}>
+      </div>
     </div>
+    <div className="qualityCard">
+      <div className="qualityNumberDiv">
+        {numbers.map(number => 
+        <p className="qualityNumber">{number}</p>)}
+      </div>
+      <div className="qualityPageInfo">
+          <div className="qualityPageItem">
+            <h2 className="qualityTitle">{title}</h2>
+            {items.map(item => <p className="qualityText">{item}</p>)}
+          </div>
+      </div>
+    </div>
+    </>
   );
 }

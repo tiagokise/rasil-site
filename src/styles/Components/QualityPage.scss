@@ -1,0 +1,57 @@
+.qualityImage{
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.qualityCard {
+    width: 100%;
+    padding: 0 20px;
+    
+    .qualityNumberDiv{
+        width: 50px;
+        height: 50px;
+        background-color: #354b84;
+        position: relative; top: -32px; left: -15px;
+        text-align: center;
+
+        .qualityNumber{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+    }
+      
+    
+    .qualityPageInfo {
+        margin-bottom: 20px;
+        
+        .qualityTitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 40px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #354b84;
+          }
+          
+          .qualityText {
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            color: #6d7783;
+            font-weight: 600px;
+            border-bottom: 4px solid #354b84;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}

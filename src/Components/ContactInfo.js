@@ -1,7 +1,7 @@
 import React from 'react';
-import ContactCard from './ContactInfo copy';
+import ContactCard from './ContactCard'
 
-function ContactInfo({ label }) {
+export default function ContactInfo({ label }) {
   return (
     <div className="contactInfo">
       <ContactCard title="Telefone" items={["+55 11 4712 9104", "+55 11 4712 4597",]} />
@@ -10,5 +10,3 @@ function ContactInfo({ label }) {
     </div>
   );
 }
-
-export default ContactInfo;

@@ -1,7 +1,9 @@
 .homeCompany{
     margin-bottom: 70px;
 
-
+    .companyInfo{
+        padding: 20px;
+    }
     .companyImagebox{
         max-width: calc(50% - 10px);
         display: inline-block;

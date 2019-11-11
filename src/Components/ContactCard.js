@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ContactCard({ title, items }) {
+export default function ContactCard({ title, items }) {
   return (
     <div className="contactCard">
       <h2>{title}</h2>
@@ -8,5 +8,3 @@ function ContactCard({ title, items }) {
     </div>
   );
 }
-
-export default ContactCard;

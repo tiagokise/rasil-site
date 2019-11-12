@@ -1,7 +1,23 @@
 .representativesInfo{
     width: 100%;
     padding: 20px 20px 0 20px;
-    max-width: 800px;
+    max-width: 90%;
     margin: auto;
     text-align: center;
+
+    @media screen {
+        @media (min-width: 768px){
+            padding: 20px 50px 0;
+
+            .homeTitle{
+                font-size: 35px;
+            }
+            .homeText{
+                font-size: 18px;
+            }
+        }
+        @media (min-width: 1024px){
+
+        }
+    }
 }

@@ -1,11 +1,22 @@
-.representativeMapSp {
-    margin-bottom: 40px;
-}
-
-.representativeMapSp img{
+.representativesMap {
+    padding: 0 5%;
     width: 100%;
-    padding: 20px;
+    align-content: center;
+    content: initial;
+    margin: 0;
+    
+    img{
+        width: 100%;
+    
+    }
+    
+    @media screen {
+        @media (min-width: 1024px){
+            padding: 0 18% 0 0;
 
+
+        }
+        
+    }
 }
-
 

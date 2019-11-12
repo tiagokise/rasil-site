@@ -1,5 +1,6 @@
 .representativesAddress{
-    padding: 20px 40px 0 40px;
+    padding: 0 40px 0 40px;
+    position: inherit;
 
         .addressTitle{
             font-family: 'Oswald', sans-serif;
@@ -27,4 +28,22 @@
             line-height: 1.7;
             color: #6d7783;
         }
+
+    @media screen {
+        @media (min-width: 768px){
+            padding: 0 6% 20px;
+            max-width: 400px;
+
+            .addressText{
+                font-size: 15px;
+            }
+        }
+        @media (min-width: 1024px){
+            position: relative;
+            top: -150px;
+            left: 63%;
+
+        }
+    }
+
 }

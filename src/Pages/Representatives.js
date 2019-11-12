@@ -2,7 +2,7 @@ import React from 'react'
 import Jumbotron from '../Components/Jumbotron';
 import JumbotronRepresentatives from '../img/jumbotronRepresentative.jpg';
 import RepresentativesInfo from '../Components/RepresentativesInfo';
-import RepresentativesMapSp from '../Components/RepresentativesMapSp';
+import RepresentativesMap from '../Components/RepresentativesMap';
 import RepresentativesAddress from '../Components/RepresentativesAddress';
 
 export default function Representatives() {
@@ -14,7 +14,7 @@ export default function Representatives() {
             />
             <div className="container">
                 <RepresentativesInfo /> 
-                <RepresentativesMapSp /> 
+                <RepresentativesMap /> 
                 <RepresentativesAddress />  
             </div>
             

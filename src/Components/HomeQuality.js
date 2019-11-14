@@ -4,7 +4,7 @@ import HomeQualityCard from './HomeQualityCard';
 
 export default function HomeQuality() {
 
-  const qualitycards = [
+  const homequalitycards = [
     {
       title: "Matéria-Prima",
       texts: [
@@ -44,7 +44,7 @@ export default function HomeQuality() {
       <h3 className="homeTitle">Qualidade</h3>
       <p className="homeText">Comprometidos com o atendimento das exigências de nossos clientes, melhoria continua de nossos processos e produtos, aperfeiçoamento do nosso quadro de colaboradores, a RASIL BORRACHAS vem aprimorando seu Sistema de Gestão da Qualidade de acordo com a norma ISO 9001, com certificação obtida em março/2009.</p>
       <div className="homeQualityInfos">
-        {  qualitycards.map(qualitycard => <HomeQualityCard  { ...qualitycard} />) }
+        {  homequalitycards.map(homequalitycard => <HomeQualityCard  { ...homequalitycard} />) }
       </div>
     </div>
   );

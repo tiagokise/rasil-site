@@ -1,0 +1,115 @@
+
+.qualitypageDiv{
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    border-radius: 2.5px;
+    background-color: #354b84;
+    margin: 0 auto 30px; 
+}
+.qualityCardgroup {
+    display: grid;
+    grid-gap: 20px;
+    
+    
+    .qualityImage{
+        width: 100%;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        
+        @media screen {
+            @media (min-width: 768px) {
+                height: 400px;
+            }
+            @media (min-width: 1024px) {
+                max-width: 45%;
+                grid-template-columns: 1fr 1fr;
+                
+            }
+        }
+    }
+  
+    .qualityCard {
+        display: inline-flexbox;
+        width: 100%;
+        padding: 0 20px;
+    
+        .qualityNumberDiv{
+            width: 50px;
+            height: 50px;
+            font-weight: 500;
+            background-color: #354b84;
+            position: relative; top: -32px; left: -15px;
+            text-align: center;
+            
+            .qualityNumber{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: 'Poppins', sans-serif;
+                font-weight: regular;
+                font-size: 15px;
+                letter-spacing: 1px;
+                color: #ffffff;
+
+            }
+
+            @media screen {
+                @media (min-width: 768px) {
+                    width: 70px;
+                    height: 70px;
+                    
+                    .qualityNumber{
+                        font-size: 20px;
+                    }
+                }
+                @media (min-width: 1024px) {
+                    
+                }
+            }
+            
+        }
+        
+        
+        .qualityPageInfo {
+            display: inline-flexbox;
+            margin-bottom: 20px;
+            
+            
+            .qualityTitle {
+                font-family: 'Poppins', sans-serif;
+                font-size: 40px;
+                font-weight: 600;
+                color: #354b84;
+            }
+            .qualityText {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                color: #6d7783;
+                font-weight: 600px;
+            }
+            
+            @media screen {
+                @media (min-width: 768px) {
+                    
+                    .qualityTitle {
+                        font-size: 50px;
+                    }
+                    .qualityText {
+                        font-size: 18px;
+                    }
+                }
+                @media (min-width: 1024px) {
+                    
+                        width: 40%;
+                    }          
+            }    
+        }
+    }
+}

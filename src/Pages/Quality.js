@@ -14,8 +14,6 @@ export default function Quality() {
             <div className="container">
                 <QualityCardList />  
             </div>
-            
         </>               
-
     );
 }

@@ -1,27 +1,23 @@
+
 .qualityCard{
-        
-    .qualityLineDiv{
-        display: block;
-        width: 30px;
-        height: 5px;
-        border-radius: 2.5px;
-        background-color: #354b84;
-        margin: 0 auto 30px; 
+    max-width: 100%;
+    text-align: center; 
+    
+    
+    .qualityCardImg img{
+        width: 100%; 
     }
     
     .qualityCardImg{
-        width: 100%;
-        height: 250px;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        justify-content: center;
+        overflow: hidden;
+        width: auto;
+        max-height: 500px;
     }
-    
+
     .qualityCardInfo{
         display: flexbox;
         padding: 20px;
+        text-align: left;
         
         .qualityTitle{
             font-family: 'Poppins', sans-serif;
@@ -51,6 +47,14 @@
 
     }
 
-
+    
+    .qualityLineDiv{
+        display: block;
+        width: 30px;
+        height: 5px;
+        border-radius: 2.5px;
+        background-color: #354b84;
+        margin: 0 auto 30px; 
+    }
 
 }

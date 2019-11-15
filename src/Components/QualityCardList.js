@@ -7,28 +7,37 @@ import QualityPic04 from '../img/QualityPic04.jpg';
 
 
 export default function QualityCardList(Label) {
+        const qualitycards = [
+        {
+                imgURL: QualityPic01,
+                number: "01",
+                title: "Borracha",
+                text: "Contamos com vasta experiência no desenvolvimento de perfis de borracha para aplicações diversas." ,
+        },                       
+        {
+                imgURL: QualityPic02,
+                number: "02",
+                title: "Guarnições",
+                text: "Nossa fábrica está apta a produzir perfis, guarnições de vedação com emendas vulcanizadas e peças prensadas." ,
+        },                              
+        {
+                imgURL: QualityPic03,
+                number: "03",
+                title: "Elastômeros",
+                text: "Trabalhamos com diversos tipos de elastômeros, principalmente com EPDM, SBR, NBR e SILICONE. Estamos capacitados a desenvolver projetos." ,
+        }, 
+        {
+                imgURL: QualityPic04,
+                number: "04",
+                title: "Moldes",
+                text: "Nossos clientes são atendidos com agilidade uma vez que contamos com matrizaria própria além de parcerias no desenvolvimentos de moldes para prensados." ,
+        }, 
+
+        ]
         return (
-                        <div className="qualityCardList">
-                                <QualityCard
-                                        imgURL={QualityPic01}
-                                        number="01"
-                                        title="Borracha"
-                                        text="Contamos com vasta experiência no desenvolvimento de perfis de borracha para aplicações diversas." />
-                                <QualityCard
-                                        imgURL={QualityPic02}
-                                        number="02"
-                                        title="Guarnições"
-                                        text="Nossa fábrica está apta a produzir perfis, guarnições de vedação com emendas vulcanizadas e peças prensadas." />
-                                <QualityCard
-                                        imgURL={QualityPic03}
-                                        number="03"
-                                        title="Elastômeros"
-                                        text="Trabalhamos com diversos tipos de elastômeros, principalmente com EPDM, SBR, NBR e SILICONE. Estamos capacitados a desenvolver projetos." />
-                                <QualityCard
-                                        imgURL={QualityPic04}
-                                        number="04"
-                                        title="Moldes"
-                                        text="Nossos clientes são atendidos com agilidade uma vez que contamos com matrizaria própria além de parcerias no desenvolvimentos de moldes para prensados." />
-                        </div>
+                <div className="qualityCardList">
+                        {  qualitycards.map(qualitycard => <QualityCard  { ...qualitycard} />) }
+
+                </div>
         );
 }

@@ -1,24 +1,26 @@
 
 .qualityCard{
     max-width: 100%;
-    text-align: center; 
-    
-    
-    .qualityCardImg img{
-        width: 100%; 
-    }
+    display: flexbox;
+    position: relative;
+   
     
     .qualityCardImg{
         overflow: hidden;
         width: auto;
         max-height: 400px;
         margin-bottom: 30px;
+        float: unset;
 
     }
-
+    .qualityCardImg img{
+        width: 100%;
+        height: unset;
+    }
+    
     .qualityCardInfo{
         padding: 0 20px;
-        text-align: left;
+        display: inline-block;
         
         .qualityTitle{
             position: relative;
@@ -29,20 +31,21 @@
             color: #354b84;
             
             
-        }
-        .qualityNumber{
-            position: absolute;
-            text-align: center;
-            bottom: 70px;
-            display: inline-block;
-            width: 55px;
-            height: 55px;
-            padding: 17px;
-            background-color: #354b84;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 500;
-            font-size: 15px;
-            color: #ffffff;
+            .qualityNumber{
+                position: absolute;
+                text-align: center;
+                bottom: 70px;
+                display: inline-block;
+                width: 55px;
+                height: 55px;
+                padding: 17px;
+                background-color: #354b84;
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                color: #ffffff;
+                margin-bottom: unset;
+            }
         }
         .qualityText {
             font-family: 'Poppins', sans-serif;
@@ -50,6 +53,7 @@
             font-size: 16px;
             color: black;
             font-weight: 600px;
+            max-width: unset;
         }
 
     }
@@ -62,6 +66,84 @@
         border-radius: 2.5px;
         background-color: #354b84;
         margin: 30px auto 30px; 
+    }
+
+
+    @media screen{
+        @media (min-width: 768px) {
+
+            .qualityCardInfo{
+
+                .qualityTitle{
+                    font-size: 44px;
+
+                    .qualityNumber{
+                        width: 60px;
+                        height: 60px;
+                        padding: 18px;
+                        font-size: 18px;
+                    }
+
+                }
+
+                .qualityText{
+                    max-width: 700px;
+                    font-size: 19px;
+
+                }
+
+                .qualityLineDiv{
+                    margin: 30px 0;
+                }
+            }
+        }
+        @media (min-width: 1024px) {
+            display: grid;
+            grid-gap: 0 20px;
+            grid-template-columns: 1fr 1fr;
+            
+            .qualityCardImg{
+                float: left;
+                margin-bottom: 0;
+                height: 480px;
+            }
+            .qualityCardImg img{
+                
+            }
+
+            .qualityCardInfo{
+                display: block;
+                padding: 0 20px;
+                margin-top: 120px;
+
+
+                .qualityTitle{
+                    font-size: 40px;
+
+                    .qualityNumber{
+                        bottom: -10px;
+                        left: -100px;
+                        width: 80px;
+                        height: 80px;
+                        padding: 25px;
+                        font-size: 20px;
+                    }
+
+                }
+                .qualityText{
+                    font-size: 17px;
+                    margin-bottom: 30px;
+                    max-width: 330px;
+                }
+
+                .qualityLineDiv{
+                    margin: 0; 
+                    position: absolute;
+        
+                }
+            }
+        }
+    
     }
 
 }

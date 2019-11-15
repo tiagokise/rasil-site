@@ -10,8 +10,9 @@ export default function QualityCard({ imgURL, title, text, number }) {
       
         <h2 className="qualityTitle"> <span className="qualityNumber"> {number} </span> {title}</h2>
         <p className="qualityText"> {text} </p>
+        <div className="qualityLineDiv"></div>
+
       </div>
-      <div className="qualityLineDiv"></div>
     </div>
   );  
 }

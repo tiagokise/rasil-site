@@ -7,6 +7,7 @@ import Product from './Pages/Product';
 import Representatives from './Pages/Representatives';
 import Quality from './Pages/Quality';
 import FooterPage from '../src/Components/FooterPage';
+import NavRasil from './Components/NavRasil';
 
 
 
@@ -14,7 +15,7 @@ import FooterPage from '../src/Components/FooterPage';
 function App() {
   return (
     <>
-      <header>HEADER</header>
+      <header><NavRasil /></header>
 
         <Switch>
          <Route path="/contato" component={Contact} />

@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600,700&display=swap');
-
 
 * {
   margin: 0;
@@ -137,3 +136,5 @@ button {
 @import '/styles/Components/RepresentativesInfo.scss';
 @import '/styles/Components/Quality.scss';
 @import '/styles/Components/QualityCard.scss';
+@import '/styles/Components/NavRasil.scss';
+

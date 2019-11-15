@@ -1,0 +1,47 @@
+.navRasil{
+    position: relative;
+    padding: 30px 20px;
+    background-color: darkslategray;
+
+    .logoNavRasil{
+        display: inline;
+
+        .logoRasil {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 23px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+        .logoBorrachas {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 22px;
+            color: #ffffff;
+            letter-spacing: -0.5px;
+            margin-left: 5px;
+
+        }
+    }
+
+    .menuNavRasil{
+        display: grid;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        display: inline-flexbox;
+        align-content: right;
+        text-align: right;
+        
+
+        .menuNavLine{
+            display: contents;
+
+            margin: 4px;
+            background-color: white;
+            display: inline-flex;
+            width: 28px;
+            height: 2px;
+        }
+
+    }
+}

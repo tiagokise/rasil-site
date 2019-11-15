@@ -11,25 +11,32 @@
     .qualityCardImg{
         overflow: hidden;
         width: auto;
-        max-height: 500px;
+        max-height: 400px;
+        margin-bottom: 30px;
+
     }
 
     .qualityCardInfo{
-        display: flexbox;
-        padding: 20px;
+        padding: 0 20px;
         text-align: left;
         
         .qualityTitle{
+            position: relative;
+            display: inline-flex;
             font-family: 'Poppins', sans-serif;
             font-size: 40px;
-            font-weight: 600;
+            font-weight: 700;
             color: #354b84;
+            
             
         }
         .qualityNumber{
-            position: relative;
-            top: -50px;
-            left: -8px;
+            position: absolute;
+            text-align: center;
+            bottom: 70px;
+            display: inline-block;
+            width: 55px;
+            height: 55px;
             padding: 17px;
             background-color: #354b84;
             font-family: 'Poppins', sans-serif;
@@ -54,7 +61,7 @@
         height: 5px;
         border-radius: 2.5px;
         background-color: #354b84;
-        margin: 0 auto 30px; 
+        margin: 30px auto 30px; 
     }
 
 }

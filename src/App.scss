@@ -18,6 +18,51 @@ li {
   list-style-type: none;
 }
 
+header{
+  display: flexbox;
+  margin: 0 auto;
+  position: absolute;
+  padding: 20px;
+  text-shadow: 2.2px 2.2px rgba(0, 0, 0, 0.7);
+  
+  .headerRasil{
+    position: relative;
+
+         
+      .logoRasil{
+        font-family: 'Montserrat';
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: -1.9px;
+        color: #ffffff;
+      }
+      .logoBorrachas{
+        margin-left: 5px;
+        font-family: 'Open Sans';
+        font-weight: 500;
+        font-size: 21px;
+        letter-spacing: -1px;
+        color: #ffffff;
+      }
+    
+    .navBarMenu{
+      position: right;
+      top: 5px;
+      display: inline;
+      height: 20px;
+      
+      .navBarLine{
+        margin-bottom: 7px;
+        width: 25px;
+        height: 2px;
+        background-color: #ffffff;
+        
+      }
+    }
+  }
+}
+  
+
 
 .container {
   max-width: 1024px;
@@ -34,7 +79,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   h1 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -52,7 +97,7 @@ li {
   text-align: center;
   display: inline-block;
   position: relative; top: -20px; left: 10px;
-
+  
   .textoseloiso {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -73,7 +118,7 @@ li {
   
   .contactCard {
     margin-bottom: 40px;
-  
+    
     h2 {
       font-family: 'Oswald', sans-serif;
       font-size: 16px;
@@ -85,21 +130,21 @@ li {
       padding-bottom: 15px;
       margin-bottom: 15px;
     }
-  
+    
     p {
       font-family: 'Poppins', sans-serif;
       font-size: 15px;
       color: #6d7783;
     }
   }
-
+  
   @media screen{
     @media (min-width: 768px) {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       grid-gap: 50px;
     }
-        
+    
     @media (min-width: 1024px) {
       display: block;
       max-width: 320px;
@@ -110,14 +155,14 @@ li {
 
 
 button {
-    padding: 12px 50px;
-    background-color: #354b84;
-    font-family: 'Oswald', sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    text-align: center;
-    color: #ffffff;
-    text-transform: uppercase;
+  padding: 12px 50px;
+  background-color: #354b84;
+  font-family: 'Oswald', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 
@@ -136,5 +181,3 @@ button {
 @import '/styles/Components/RepresentativesInfo.scss';
 @import '/styles/Components/Quality.scss';
 @import '/styles/Components/QualityCard.scss';
-@import '/styles/Components/NavRasil.scss';
-

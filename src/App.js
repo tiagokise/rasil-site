@@ -7,15 +7,23 @@ import Product from './Pages/Product';
 import Representatives from './Pages/Representatives';
 import Quality from './Pages/Quality';
 import FooterPage from '../src/Components/FooterPage';
-import NavRasil from './Components/NavRasil';
-
-
-
 
 function App() {
   return (
     <>
-      <header><NavRasil /></header>
+      <header>
+        <div className="headerRasil">
+
+            <a className="logoRasil">Rasil</a>
+            <a className="logoBorrachas">Borrachas</a>
+          <span className="navBarMenu">
+            <div className="navBarLine"></div>
+            <div className="navBarLine"></div>
+            <div className="navBarLine"></div>
+          </span>
+        </div>
+
+      </header>
 
         <Switch>
          <Route path="/contato" component={Contact} />

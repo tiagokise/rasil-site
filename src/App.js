@@ -12,20 +12,15 @@ import HeaderRasil from '../src/Components/HeaderRasil';
 function App() {
   return (
     <>
-      <header>
       <HeaderRasil />
-      </header>
-
-        <Switch>
-         <Route path="/contato" component={Contact} />
-         <Route path="/home" component={Home} />
-         <Route path="/produtos" component={Product} />
-         <Route path="/representantes" component={Representatives} />
-         <Route path="/qualidade" component={Quality} />
-        </Switch>
-        <footer>
-        <FooterPage />
-        </footer>
+      <Switch>
+        <Route path="/contato" component={Contact} />
+        <Route path="/produtos" component={Product} />
+        <Route path="/representantes" component={Representatives} />
+        <Route path="/qualidade" component={Quality} />
+        <Route path="/" component={Home} />
+      </Switch>
+      <FooterPage />
       
     </>
   );

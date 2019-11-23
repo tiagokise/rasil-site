@@ -1,41 +1,42 @@
-header{
-    width: 100%;
-    display: inline-block;
-    margin: auto;
-    position: absolute;
-    padding: 20px;
-    text-shadow: 2.2px 2.2px rgba(0, 0, 0, 0.7);
+.headerRasil{
+  border: transparent;
+  width: 100%;
+  display: inline-block;
+  margin: auto;
+  position: absolute;
+  padding: 20px 20px;
+
+  
+
+  .logoButton{
+    border: transparent;
+    background-color: transparent;
+    padding: unset;
+    text-transform: none;
     
-    .headerRasil{
-           
-        .logoRasil{
-          font-family: 'Montserrat';
-          font-size: 25px;
-          font-weight: 700;
-          letter-spacing: -1.9px;
-          color: #ffffff;
-        }
-        .logoBorrachas{
-          margin-left: 5px;
-          font-family: 'Open Sans';
-          font-weight: 500;
-          font-size: 21px;
-          letter-spacing: -1px;
-          color: #ffffff;
-        }
-      
-      .navBarMenu{
-        float: right;
-        margin-left: unset;
-        display: block;
-        
-        .navBarLine{
-          width: 25px;
-          background-color: #ffffff;
-          padding: 1.5px;
-          margin-bottom: 5px;
-          
-        }
+    .h1LogoRasil{
+
+      font-family: 'Open Sans';
+      font-weight: 500;
+      font-size: 21px;
+      letter-spacing: -1px;
+      color: #ffffff;
+
+
+      strongLogoRasil{
+        font-family: 'Montserrat';
+        font-size: 25px;
+        font-weight: 700;
       }
     }
+  }
+  .headerNav{
+    display: none;
+  }
+  .hamburgerBox{
+    float: right;
+    border: none;
+    background-color: white;
+
+  }
 }

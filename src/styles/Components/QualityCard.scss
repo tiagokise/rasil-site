@@ -129,7 +129,6 @@
                 display: inline-block;
                 height: 220px;
                 margin: 100px 0 0 25px;
-                vertical-align: center;
 
 
 
@@ -153,8 +152,8 @@
                 }
                 .qualityCardInfo{
                     text-align: right;
-                    float: right;
-                    margin: 100px 25px 65px 0;
+                    float: unset;
+                    margin: 100px 25px 0 0;
 
 
                     

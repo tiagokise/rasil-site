@@ -7,22 +7,13 @@ import Product from './Pages/Product';
 import Representatives from './Pages/Representatives';
 import Quality from './Pages/Quality';
 import FooterPage from '../src/Components/FooterPage';
+import HeaderRasil from '../src/Components/HeaderRasil';
 
 function App() {
   return (
     <>
       <header>
-        <div className="headerRasil">
-
-            <a className="logoRasil">Rasil</a>
-            <a className="logoBorrachas">Borrachas</a>
-          <span className="navBarMenu">
-            <div className="navBarLine"></div>
-            <div className="navBarLine"></div>
-            <div className="navBarLine"></div>
-          </span>
-        </div>
-
+      <HeaderRasil />
       </header>
 
         <Switch>

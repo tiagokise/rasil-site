@@ -18,49 +18,7 @@ li {
   list-style-type: none;
 }
 
-header{
-  display: flexbox;
-  margin: 0 auto;
-  position: absolute;
-  padding: 20px;
-  text-shadow: 2.2px 2.2px rgba(0, 0, 0, 0.7);
-  
-  .headerRasil{
-    position: relative;
 
-         
-      .logoRasil{
-        font-family: 'Montserrat';
-        font-size: 25px;
-        font-weight: 700;
-        letter-spacing: -1.9px;
-        color: #ffffff;
-      }
-      .logoBorrachas{
-        margin-left: 5px;
-        font-family: 'Open Sans';
-        font-weight: 500;
-        font-size: 21px;
-        letter-spacing: -1px;
-        color: #ffffff;
-      }
-    
-    .navBarMenu{
-      position: right;
-      top: 5px;
-      display: inline;
-      height: 20px;
-      
-      .navBarLine{
-        margin-bottom: 7px;
-        width: 25px;
-        height: 2px;
-        background-color: #ffffff;
-        
-      }
-    }
-  }
-}
   
 
 
@@ -181,3 +139,5 @@ button {
 @import '/styles/Components/RepresentativesInfo.scss';
 @import '/styles/Components/Quality.scss';
 @import '/styles/Components/QualityCard.scss';
+@import '/styles/Components/HeaderRasil.scss';
+

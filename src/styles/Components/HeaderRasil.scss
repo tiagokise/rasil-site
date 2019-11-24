@@ -1,42 +1,108 @@
 .headerRasil{
   border: transparent;
   width: 100%;
-  display: inline-block;
-  margin: auto;
   position: absolute;
-  padding: 20px 20px;
-
+  padding: 20px;
   
 
   .logoButton{
-    border: transparent;
-    background-color: transparent;
-    padding: unset;
-    text-transform: none;
+    position: relative;
+    z-index: 2;
+    text-shadow: 2px 2px 3px #0000008e;
     
-    .h1LogoRasil{
-
+    h1{
       font-family: 'Open Sans';
+      font-size: 22px;
       font-weight: 500;
-      font-size: 21px;
-      letter-spacing: -1px;
       color: #ffffff;
 
-
-      strongLogoRasil{
+      strong{
         font-family: 'Montserrat';
-        font-size: 25px;
+        font-size: 23px;
         font-weight: 700;
       }
     }
   }
-  .headerNav{
-    display: none;
-  }
-  .hamburgerBox{
-    float: right;
-    border: none;
-    background-color: white;
 
+  .headerNav{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 70px 20px 20px;
+    background-color: #354b84ec;
+    transform: translate(-100%);
+    transition: transform .3s ease;
+
+    button{
+      color: #cfd7e0;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      font-size: 19px;
+      font-weight: 700;
+      line-height: 45px;
+      text-shadow: 2px 2px 3px #0000007e;
+    }
+
+    &.headerNavIsOpen {
+      transform: translate(0);
+      & :hover{
+        color: rgba(255, 255, 0, 0.719);
+      }
+    }
+  }
+
+  .hamburgerBox{
+    width: 30px;
+    height: 30px;
+    float: right;
+
+    .hamburger {
+      text-shadow: 2px 2px 2px #000000;
+
+      width: 100%;
+      height: 3px;
+      position: relative;
+      background-color: white;
+
+      &:before, &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition: transform .3s ease;
+      }
+
+      &:before {
+        top: -10px
+      }
+
+      &:after {
+        top: 10px;
+      }
+    }
+
+    &.isOpen {
+      .hamburger {
+        height: 0;
+
+        &:before {
+          transform: rotate(45deg) translate(5px, 5px);
+        }
+        &:after {
+          transform: rotate(-45deg) translate(8px, -10px);
+        }
+      }
+    }
+
+    @media screen {
+      @media (min-width: 1024px) {
+        display: none;
+      }
+    }
   }
 }

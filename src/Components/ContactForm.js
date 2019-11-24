@@ -6,7 +6,7 @@ export default function ContactForm() {
       <input id="name" name="name" placeholder="Nome" />
       <input id="email" name="email" placeholder="Email" />
       <textarea id="message" name="message" placeholder="Deixe uma mensagem..." />
-      <button>Enviar</button>
+      <button className="contactButton">Enviar</button>
     </form>
   );
 }

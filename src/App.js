@@ -6,7 +6,7 @@ import Home from './Pages/Home';
 import Product from './Pages/Product';
 import Representatives from './Pages/Representatives';
 import Quality from './Pages/Quality';
-import FooterPage from '../src/Components/FooterPage';
+import FooterRasil from '../src/Components/FooterRasil';
 import HeaderRasil from '../src/Components/HeaderRasil';
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
         <Route path="/qualidade" component={Quality} />
         <Route path="/" component={Home} />
       </Switch>
-      <FooterPage />
+      <FooterRasil />
       
     </>
   );

@@ -15,7 +15,7 @@ export default function HeaderRasil() {
   return (
     <header className="headerRasil" >
       <button className="logoButton" onClick={() => history.push("/")}>
-        <h1 className="h1LogoRasil"><strong className="strongLogoRasil">Rasil</strong> Borrachas</h1>
+        <h1><strong>Rasil</strong> Borrachas</h1>
       </button>
       <nav className={`headerNav ${headerNavIsOpen ? "headerNavIsOpen" : ""}`}>
         <ul className="headerNavList">

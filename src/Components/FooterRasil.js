@@ -5,7 +5,7 @@ import InstaLogo from '../img/logoinstawhite.png';
 
 
 
-export default function FooterPage() {
+export default function FooterRasil() {
   return (
 
     <footer className="footerPage">

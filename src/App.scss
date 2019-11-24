@@ -19,7 +19,12 @@ li {
 }
 
 
-  
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
 
 
 .container {
@@ -112,7 +117,7 @@ li {
 }
 
 
-button {
+.contactButton {
   padding: 12px 50px;
   background-color: #354b84;
   font-family: 'Oswald', sans-serif;
@@ -127,7 +132,7 @@ button {
 @import '/styles/Components/ContactForm.scss';
 @import '/styles/Components/JumbotronHome.scss';
 @import '/styles/Components/Representatives.scss';
-@import '/styles/Components/FooterPage.scss';
+@import '/styles/Components/FooterRasil.scss';
 @import '/styles/Components/ProductsList.scss';
 @import '/styles/Components/ProductsHeader.scss';
 @import '/styles/Components/Home.scss';

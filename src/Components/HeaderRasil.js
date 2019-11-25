@@ -3,7 +3,7 @@ import { useHistory } from 'react-router-dom';
 
 export default function HeaderRasil() {
   const history = useHistory()
-  const [ headerNavIsOpen, setHeaderNavIsOpen ] = useState(false);
+  const [ headerNavIsOpen, setHeaderNavIsOpen ] = useState(true);
   const navItems = [
     {name: "home", label: "Home"},
     {name: "qualidade", label: "Qualidade"},
@@ -21,7 +21,9 @@ export default function HeaderRasil() {
         <ul className="headerNavList">
           { navItems.map(navItem => 
             <li className="headerNavItem">
-              <button className="button" onClick={() => history.push(`/${navItem.name}`)}>{navItem.label}</button>
+              <button className="button" onClick={() => {setHeaderNavIsOpen(true); history.push(`/${navItem.name}`)}}>
+                {navItem.label}
+              </button>
             </li>
           )}
         </ul>

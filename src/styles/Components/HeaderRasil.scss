@@ -2,7 +2,8 @@
   border: transparent;
   width: 100%;
   position: absolute;
-  padding: 20px;
+  padding: 20px 30px 20px 80px;
+  text-align: center;
   
 
   .logoButton{
@@ -61,11 +62,13 @@
     @media screen {
       @media (min-width: 1024px) {
         position: relative;
-        display:inline-block;
-        height: unset;
-        width: unset;
-        padding: 20px;
-
+        display:inline-flex;
+        padding: 20px 0 0 200px;
+        ul{
+          display: flex;
+          width: 100%;
+          justify-content: space-around;
+        }
 
         &.headerNavIsOpen {
           background-color: #ffffff00;

@@ -8,7 +8,9 @@ export default function ProductsHeader() {
                 Os melhores produtos para atenderem as suas diversas necessidades.
             </h3>
             <ul className="productsCategories">
-                {categories.map(category => <li className="productsCategory">{category}</li>)}
+                {categories.map(category => 
+                    <li className="productsCategory">{category}
+                    </li>)}
             </ul>
         </div>
     );

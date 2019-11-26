@@ -1,51 +1,39 @@
-.footerPage{
-  display: grid;
+.footerRasil{
   position: relative;
   height: auto;
   width: 100%;
   background-color: #354b84;
-  padding: 10px 20px 0 20px;
-  
+  padding: 20px 25px 0 25px;
   
   .footerAddress{
     position: relative;
     display: inline-flexbox;
     font-family: 'Poppins', sans-serif;
     opacity: 0.7;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 200;
     color: #ffffff;
     text-align: center;
     line-height: 20px;
     margin-bottom: 15px;
+    
   }
 
-  .linksFooter{
-    width:100%;
+  .footerNavList{
+    display: flex;
+    justify-content: space-around;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    line-height: 20px;
-    margin: 0;
     text-align: center;
     list-style: none;  
     font-weight:400;
     opacity: 0.7;
 
-    
+    button{
+      color: #ffffff;
+    }
   }
-  .linksFooter li{
-    display: inline-block;
-    margin-left: 20px;
-  }
-  .linksFooter a{
-    color:white;
-    text-decoration-line: none;
-  }
-  .linksFooter a:hover{
-    color: yellow;
-    font-size: 13px;
-  }
-
+  
   .iconesRedesSociais{
     text-align: center;
     display:flex;
@@ -76,12 +64,13 @@
         font-size: 12px;
 
       }
-      .linksFooter{
-        font-size: 12px;
+      .footerNavList{
+        button{
+        font-size: 13px;
         text-align: right;
-
-        .linksFooter li{
+        color: #ffffff;
         }
+
       }
       
       .iconesRedesSociais{
@@ -95,9 +84,7 @@
           padding-right: 30px;
 
         }
-        .instaLogo{
 
-        }
       }  
     }
   }

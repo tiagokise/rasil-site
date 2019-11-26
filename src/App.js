@@ -6,8 +6,8 @@ import Home from './Pages/Home';
 import Product from './Pages/Product';
 import Representatives from './Pages/Representatives';
 import Quality from './Pages/Quality';
-import FooterRasil from '../src/Components/FooterRasil';
-import HeaderRasil from '../src/Components/HeaderRasil';
+import FooterRasil from './Components/FooterRasil';
+import HeaderRasil from './Components/HeaderRasil';
 
 function App() {
   return (

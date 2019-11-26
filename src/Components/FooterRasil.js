@@ -1,25 +1,35 @@
 import React from 'react'
 import FacebookLogo from '../img/logofacebookwhitetype.png';
 import InstaLogo from '../img/logoinstawhite.png';
-
-
-
+import { useHistory } from 'react-router-dom';
 
 export default function FooterRasil() {
-  return (
+  const history = useHistory()
+  const navItens = ([
+    {name: "home", label: "Home"},
+    {name: "qualidade", label: "Qualidade"},
+    {name: "produtos", label: "Produtos"},
+    {name: "representantes", label: "Representantes"},
+    {name: "contato", label: "Contato"},
+  ])
 
-    <footer className="footerPage">
+  return (
+    <footer className="footerRasil">
       <p className="footerAddress">Rasil Borrachas. Atuando há mais de 30 anos no mercado de artefatos de borracha.
       <br></br>Contato:  55 (0**11) 4712-4597 / 4712-9104
-      <br></br>Endereço: Rua Quintino Bocaiúva, 1283 - São Roque – São Paulo – Brasil</p>
+      <br></br>Endereço: Rua Quintino Bocaiúva, 1283<br></br>São Roque – São Paulo – Brasil</p>
       <div className="divRight">
-        <ul className="linksFooter">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Qualidade</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Representantes</a></li>
-          <li><a href="#">Contato</a></li>
+      <nav className="footerNav">
+        <ul className="footerNavList">
+          { navItens.map(navItem => 
+            <li className="footerNavItem">
+              <button className="footerNavButton" onClick={() => history.push(`/${navItem.name}`)}>
+                {navItem.label}
+              </button>
+            </li>
+          )}
         </ul>
+      </nav>
         <div className="iconesRedesSociais">
           <a target="_blank" href="#"><img className="faceLogo" src={FacebookLogo} alt='Facebook' /></a>
           <a target="_blank" href="#"><img className="instaLogo" src={InstaLogo} alt='Instagram' /></a>

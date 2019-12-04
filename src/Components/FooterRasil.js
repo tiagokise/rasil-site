@@ -2,6 +2,7 @@ import React from 'react'
 import FacebookLogo from '../img/logofacebookwhitetype.png';
 import InstaLogo from '../img/logoinstawhite.png';
 import { useHistory } from 'react-router-dom';
+import LogoRasil from './LogoRasil';
 
 export default function FooterRasil() {
   const history = useHistory()
@@ -15,6 +16,7 @@ export default function FooterRasil() {
 
   return (
     <footer className="footerRasil">
+      <div className="logoRasil"> <LogoRasil /></div>
       <p className="footerAddress">Rasil Borrachas. Atuando há mais de 30 anos no mercado de artefatos de borracha.
       <br></br>Contato:  55 (0**11) 4712-4597 / 4712-9104
       <br></br>Endereço: Rua Quintino Bocaiúva, 1283<br></br>São Roque – São Paulo – Brasil</p>

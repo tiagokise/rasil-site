@@ -4,6 +4,24 @@
   width: 100%;
   background-color: #354b84;
   padding: 20px 25px 0 25px;
+
+  .logoRasil{
+    text-align: center;
+    margin-bottom: 10px;
+    
+    h1{
+      font-family: 'Open Sans';
+      font-size: 22px;
+      font-weight: 500;
+      color: #ffffff;
+
+      strong{
+        font-family: 'Montserrat';
+        font-size: 23px;
+        font-weight: 700;
+      }
+    }
+  }
   
   .footerAddress{
     position: relative;
@@ -21,7 +39,7 @@
 
   .footerNavList{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;  
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     text-align: center;
@@ -29,8 +47,12 @@
     font-weight:400;
     opacity: 0.7;
 
-    button{
+
+    .footerNavButton{
+      padding: 3px;
+      display: inline;
       color: #ffffff;
+
     }
   }
   
@@ -52,21 +74,33 @@
   }  
   @media screen{
     @media (min-width: 1024px) {
-      padding: 25px 30px;
+      padding: 60px 30px;
       width: 100%;
-      display: grid;
-      grid-template-columns: 55% 1fr;
       position: relative;
 
+      .logoRasil{
+        position: absolute;
+        top: 15px;
+        right: 50px;
+      }
+
       .footerAddress{
+        position: absolute;
+        top: 20px;
+        left: 50px;
         text-align: left;
-        margin-bottom: 0;
-        font-size: 12px;
+        font-size: 13px;
+        line-height: 22px;
+
 
       }
       .footerNavList{
-        button{
-        font-size: 13px;
+        position: absolute;
+        top: 50px;
+        right: 46px;
+
+        .footerNavButton{
+        font-size: 15px;
         text-align: right;
         color: #ffffff;
         }
@@ -74,10 +108,9 @@
       }
       
       .iconesRedesSociais{
-        display:inline-flexbox;
-        padding-top: 10px;
-        padding-bottom: 0;
-        float: right;
+        position: absolute;
+        top: 70px;
+        right: 47px;
 
         
         .faceLogo{

@@ -2,6 +2,7 @@
   "name": "creck",
   "version": "0.1.0",
   "private": false,
+  "license": "UNLICENSED",
   "dependencies": {
     "google-map-react": "^1.1.5",
     "node-sass": "^4.13.0",

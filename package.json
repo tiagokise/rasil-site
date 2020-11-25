@@ -1,7 +1,7 @@
 {
   "name": "creck",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "license": "UNLICENSED",
   "dependencies": {
     "@babel/helper-regex": "^7.10.5",

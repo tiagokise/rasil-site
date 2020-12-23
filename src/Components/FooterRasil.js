@@ -33,8 +33,8 @@ export default function FooterRasil() {
         </ul>
       </nav>
         <div className="iconesRedesSociais">
-          <a target="_blank" href="http://facebook.com"><img className="faceLogo" src={FacebookLogo} alt='Facebook' /></a>
-          <a target="_blank" href="http://instagram.com"><img className="instaLogo" src={InstaLogo} alt='Instagram' /></a>
+          <a href="http://facebook.com"><img className="faceLogo" src={FacebookLogo} alt='Facebook' /></a>
+          <a href="http://instagram.com"><img className="instaLogo" src={InstaLogo} alt='Instagram' /></a>
         </div>
       </div>
     </footer>

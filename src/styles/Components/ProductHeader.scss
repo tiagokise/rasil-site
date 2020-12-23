@@ -1,0 +1,51 @@
+.productsHeader{
+  padding: 20px 15px;
+
+  .productsText{
+      font-family: 'Roboto Slab', serif;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 2.25;
+      text-align: center;
+      color: #2b2b2b;
+      margin-bottom: 40px;
+      position: relative;
+      
+      &::after{
+          content: "";
+          display: block;
+          width: 30px;
+          height: 3px;
+          background-color: #071fc8;
+          margin: 0 auto;
+          position: absolute;
+          bottom: -20px;
+          left: 0;
+          right: 0;
+      }
+  }
+
+  .productsCategories{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .productsCategory{
+          font-family: 'Poppins', sans-serif;
+          font-weight: 600;
+          font-size: 13px;
+          text-align: center;
+          color: #293340;
+          text-transform: uppercase;
+          border-radius: 22.5px;
+          box-shadow: 0 5px 12px 0 rgba(0, 0, 0, 0.29);
+          margin: 0 10px 20px;
+          padding: 3px 20px;
+
+          &:hover{
+              background-color: #071fc8;
+              color: white;
+          }
+      }
+  }
+}
